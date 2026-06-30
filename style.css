@@ -214,9 +214,9 @@ ul li a:hover{
     display: block !important;
     position: relative !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 100% !important;  
     text-align: center !important; /* Isse iske andar ka inline content center hoga */
-    margin: 30px 0 !important;
+    margin-top: 50px 0 !important;
     left: auto !important;
     right: auto !important;
     top: auto !important;
@@ -227,8 +227,8 @@ ul li a:hover{
 
 .image img {
     display: inline-block !important; /* block ki jagah inline-block taaki text-align: center ispe kaam kare */
-    max-width: 150px !important;
-    width: 150px !important;
+    max-width: 160px !important;
+    width: 160px !important;
     height: auto !important;
     margin: 0 auto !important;
     position: static !important; /* Kisi bhi tarah ki relative/absolute positioning ko cancel karne ke liye */
