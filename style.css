@@ -64,7 +64,7 @@ ul li a:hover{
 
 .info{
     margin-left: 7%;
-    margin-too: 10%;
+    margin-top: 5%;
 }
 
 .info h1{
@@ -107,12 +107,12 @@ ul li a:hover{
 
 .image img{
     position:absolute;
-    height:400px;
-    left: 400px;
+    height:300px;
+    left: 300px;
     transform: translate(-55%);
-    bottom:20px;
+    bottom:80px;
     transition: left 2s ease;
-    border-radius: 20px;
+    border-radius: 300px;
 }
 
 .image img:hover {
