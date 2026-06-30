@@ -195,13 +195,15 @@ ul li a:hover{
   
     .image {
         display: block !important; /* Flex center hatane ke liye */
-        margin: 10px 0 !important; /* Left margin 0 karne se image left me shift ho jayegi */
-        width: auto !important;
+        margin: 20px 0 !important; /* Left margin 0 karne se image left me shift ho jayegi */
+        width: 100% !important;
         text-align: left !important;
+        position: relative;
+        clear:both !important;
     }
 
     .image img {
-        max-width: 100px !important;
+        max-width: 120px !important;
         height: auto !important;
         display: inline-block !important;
     }
