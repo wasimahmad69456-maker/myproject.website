@@ -198,12 +198,15 @@ ul li a:hover{
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    position: relative !important;
+    height: auto !important;
 }
 
 /* Logo ko sabse upar 1st number pe rakhne ke liye */
 .logo {
     order: 1 !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
+    position: relative !important;
 }
 
 /* Profile image ko Logo ke theek niche (2nd number par) aur baaki links ke TOP par lane ke liye */
@@ -214,7 +217,7 @@ ul li a:hover{
     position: relative !important;
     text-align: center !important;
     width: 100% !important;
-    margin: 15px auto !important; /* Top aur bottom me thoda gap dene ke liye */
+    margin: 20px auto !important; /* Top aur bottom me thoda gap dene ke liye */
 }
 
 .image img {
@@ -231,7 +234,7 @@ ul li a:hover{
     left: auto !important;
     right: auto !important;
     display: inline-block !important; 
-    margin: 8px !important;
+    margin: 10px !important;
 }
   /* Links/Menu ko overlap hone se rokne ke liye */
 nav, .menu, .links, a { 
