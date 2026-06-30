@@ -208,3 +208,20 @@ ul li a:hover{
         display: inline-block !important;
     }
   }
+  /* Links/Menu ko overlap hone se rokne ke liye */
+.nav, .menu, .links, a { 
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    display: block !important; /* Mobile me links ko upar-niche karne ke liye */
+    text-align: center !important;
+    margin: 10px 0 !important;
+}
+
+/* Poore main section ka layout normal karne ke liye */
+.main {
+    display: flex !important;
+    flex-direction: column !important; /* Har cheez ek ke niche ek aayegi */
+    align-items: center !important;
+}
