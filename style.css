@@ -188,15 +188,7 @@ ul li a:hover{
     position: relative !important;
     left: initial !important;
     right: initial !important;
-    top: initial !important;
-    bottom: initial !important;
-    margin: 20px auto !important;
-    max-width: 85% !important;
-    height: auto !important;
-    display: block !important;
-  }
-}
-/* 5. Profile photo ko sahi jagah lane aur overlap thik karne ke liye */
+   /* 5. Profile photo ko sahi jagah lane aur overlap thik karne ke liye */
   /* Hum seedhe photo ke container (.image) aur uske andar ki img dono ko reset karenge */
   .image {
     position: relative !important;
@@ -220,3 +212,5 @@ ul li a:hover{
     height: auto !important;
     display: block !important;
   }
+  }
+}
