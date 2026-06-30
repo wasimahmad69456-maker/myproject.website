@@ -193,23 +193,48 @@ ul li a:hover{
    /* 5. Profile photo ko sahi jagah lane aur overlap thik karne ke liye */
   /* Hum seedhe photo ke container (.image) aur uske andar ki img dono ko reset karenge */
   
-    .image {
-        display: block !important; /* Flex center hatane ke liye */
-        margin: 20px 0 !important; /* Left margin 0 karne se image left me shift ho jayegi */
-        width: 100% !important;
-        text-align: left !important;
-        position: relative;
-        clear:both !important;
-    }
+   /* Poore header/main container ko flex banakar column me set karenge */
+.main, header, nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
 
-    .image img {
-        max-width: 120px !important;
-        height: auto !important;
-        display: inline-block !important;
-    }
-  }
+/* Logo ko sabse upar 1st number pe rakhne ke liye */
+.logo {
+    order: 1 !important;
+    margin-bottom: 15px !important;
+}
+
+/* Profile image ko Logo ke theek niche (2nd number par) aur baaki links ke TOP par lane ke liye */
+.image {
+    order: 2 !important; 
+    display: block !important;
+    clear: both !important;
+    position: relative !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 15px auto !important; /* Top aur bottom me thoda gap dene ke liye */
+}
+
+.image img {
+    max-width: 130px !important; /* Mobile ke liye perfect size */
+    height: auto !important;
+    display: inline-block !important;
+}
+
+/* Menu links ko image ke niche (3rd number par) push karne ke liye */
+.menu, .links, .nav a, ul {
+    order: 3 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    display: inline-block !important; 
+    margin: 8px !important;
+}
   /* Links/Menu ko overlap hone se rokne ke liye */
-.nav, .menu, .links, a { 
+nav, .menu, .links, a { 
     position: relative !important;
     top: auto !important;
     left: auto !important;
