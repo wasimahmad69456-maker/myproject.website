@@ -245,7 +245,7 @@ ul li a:hover{
     margin: 10px !important;
 }
   /* Links/Menu ko overlap hone se rokne ke liye */
-nav, .menu, .links, a { 
+  nav, .menu, .links, a { 
     position: relative !important;
     top: auto !important;
     left: auto !important;
