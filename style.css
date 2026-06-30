@@ -212,18 +212,23 @@ ul li a:hover{
 /* Profile image ko Logo ke theek niche (2nd number par) aur baaki links ke TOP par lane ke liye */
 .image {
     order: 2 !important; 
-    display: block !important;
-    clear: both !important;
+    display: flex !important;
+    justify-content: center !important;
+    left:0 !important;
+    right: 0!important;
     position: relative !important;
     text-align: center !important;
     width: 100% !important;
-    margin: 20px auto !important; /* Top aur bottom me thoda gap dene ke liye */
+    bottom: auto !important;
+    margin: 30px auto !important; /* Top aur bottom me thoda gap dene ke liye */
 }
 
 .image img {
-    max-width: 130px !important; /* Mobile ke liye perfect size */
+    max-width: 150px !important; /* Mobile ke liye perfect size */
+    width: 150px !important;
     height: auto !important;
-    display: inline-block !important;
+    display: block !important;
+    margin: 0 !important;
 }
 
 /* Menu links ko image ke niche (3rd number par) push karne ke liye */
