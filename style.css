@@ -17,7 +17,7 @@
 }
 
 body{
-    background:url("a7c76dd6-1c55-4ff8-b473-b1ba8f4c5397.jfif");
+    background: linear-gradient(#e6f1dd, #fcf6fd);
     font-family:Arial;
 }
 
@@ -130,4 +130,69 @@ ul li a:hover{
     color: #000;
     margin-right: -60px;
 
+}
+
+/* --- COMPLETE MOBILE RESPONSIVE FIX --- */
+@media (max-width: 768px) {
+  
+  /* 1. Background image ko mobile screen ke hisab se adjust karne ke liye */
+  body {
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: scroll !important;
+  }
+
+  /* 2. Navbar ko wrap karne ke liye taaki menu items chote na dikhein */
+  .navbar {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 15px 0 !important;
+  }
+
+  .navbar ul {
+    display: flex !important;
+    flex-direction: row !important; /* Mobile par bhi menu items ek line mai rahenge */
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    padding: 0 !important;
+  }
+
+  /* 3. Main section ko mobile ke liye single column banana */
+  .main {
+    display: flex !important;
+    flex-direction: column !important; /* Text upar, photo niche */
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
+  /* 4. Text (info) section ko full width dena */
+  .info {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .info h1 {
+    font-size: 2.5rem !important; /* Mobile par text ka size thik karne ke liye */
+  }
+
+  /* 5. Profile photo ko sahi jagah lane ke liye */
+  /* Agar aapne photo ko kisi class mai rakha hai toh .main img ki jagah woh class use karein */
+  .main img:not(.logo) {
+    position: relative !important;
+    left: initial !important;
+    right: initial !important;
+    top: initial !important;
+    bottom: initial !important;
+    margin: 20px auto !important;
+    max-width: 85% !important;
+    height: auto !important;
+    display: block !important;
+  }
 }
