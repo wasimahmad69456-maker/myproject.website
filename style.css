@@ -211,23 +211,27 @@ ul li a:hover{
 
 /* Profile image ko Logo ke theek niche (2nd number par) aur baaki links ke TOP par lane ke liye */
 .image {
-    display: flex !important;
-    justify-content: center !important;
-    left:0 !important;
-    right: 0!important;
+    display: block !important;
     position: relative !important;
-    text-align: center !important;
     width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important; /* Isse iske andar ka inline content center hoga */
+    margin: 30px 0 !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
     bottom: auto !important;
-    margin: 30px auto !important; /* Top aur bottom me thoda gap dene ke liye */
+    transform: none !important;
+    float: none !important;
 }
 
 .image img {
-    max-width: 150px !important; /* Mobile ke liye perfect size */
+    display: inline-block !important; /* block ki jagah inline-block taaki text-align: center ispe kaam kare */
+    max-width: 150px !important;
     width: 150px !important;
     height: auto !important;
-    display: block !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
+    position: static !important; /* Kisi bhi tarah ki relative/absolute positioning ko cancel karne ke liye */
 }
 
 /* Menu links ko image ke niche (3rd number par) push karne ke liye */
